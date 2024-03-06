@@ -12,14 +12,27 @@
         function openPopup() {
         document.getElementById('popup').style.display = 'block';
         }
-
         function closePopup() {
         document.getElementById('popup').style.display = 'none';
+        }
+
+        function openPopup2(){
+            document.getElementById('popup2').style.display = 'block';
+        }
+        function closePopup2() {
+        document.getElementById('popup2').style.display = 'none';
+        }
+
+        function openPopup3(){
+            document.getElementById('popup3').style.display = 'block';
+        }
+        function closePopup3() {
+        document.getElementById('popup3').style.display = 'none';
         }
     </script>
 
     <div class="container">
-        <img id="personal_photo" src="./image/testPhoto.png" alt="personal_photo">
+        <img id="personal_photo" src="image/personalPhoto.png" alt="personal_photo">
         <p id="name">張詠棋</p>
         <p id="school">澎湖科技大學資訊工程學系</p>
         <p><a href="https://github.com/zhang70684?tab=repositories"><img id="github_icon" src="image/githubIcon.png" alt="my_github"></a></p>
@@ -27,14 +40,29 @@
         <p>0975812656</p>
 
         <div class="content_block">
-            <p id="CV_button" onclick="openPopup()">自傳</p>
-
-
+            <p class="CV" onclick="openPopup()">自我介紹</p>
             <div id="popup">
                 <span onclick="closePopup()" class="w3-button w3-display-topright">&times;</span>
-                <p>這是彈出式視窗的內容。</p>
+                <article class="stay_left">
+                    您好，我的名字是<a><b><ins>張詠棋</ins></b></a>，今年24歲的<a><b><ins>澎湖科技大學資訊工程系</ins></b></a>畢業生，誠摯地向貴公司提出應徵。儘管目前僅擁有打工經驗，但我以積極進取、勇於學習的態度自居，相信這種精神將使我能夠迅速融入並做出實質貢獻。
+                </article>
             </div>
-            
+             
+            <p class="CV" onclick="openPopup2()">學習經歷與專業背景</p>
+            <div id="popup2">
+                <span onclick="closePopup2()" class="w3-button w3-display-topright">&times;</span>
+                <article class="stay_left">
+                    在澎湖科技大學的這段時間，學習了<a><b><ins>c++</ins></b></a>、<a><b><ins>java</ins></b></a>等程式語言和<a><b><ins>資料庫管理</ins></b></a>、<a><b><ins>網路工程</ins></b></a>等相關的課程，建立了堅實的資訊工程基礎。並透過w3school自學了前端等相關知識，在學期間也時常透過LeetCode的網站和朋友進行比賽和交流。但我漸漸覺得前端的東西不是我的理想所在，我因為喜歡遊戲而在升學的時候選擇了資訊工程，所以畢業後透過網路課程自學了<a><b><ins>unity</ins></b></a>，我相信在未來的道路還會學習許多的新事物。
+                </article>
+            </div>
+
+            <p class="CV" onclick="openPopup3()">日本工作經歷</p>
+            <div id="popup3">
+                <span onclick="closePopup3()" class="w3-button w3-display-topright">&times;</span>
+                <article class="stay_left">
+                    畢業後，我決定挑戰自己，也為了家人和自己的期望，利用大學期間自學日文，並且考取了<a><b><ins>日本語能力試驗N2</ins></b></a>的證照，前往日本進行為期半年的打工度假。這段時間不僅讓我深入了解了日本文化，還擴展了我的國際視野。在異國工作的過程中，我學到了更多與語言不通的外國人合作完成工作的辦法，提高了我的<a><b><ins>適應能力</ins></b></a>，加強了<a><b><ins>自主學習</ins></b></a>和<a><b><ins>解決問題</ins></b></a>的能力。
+                </article>
+            </div>
         </div>
 
 

@@ -43,12 +43,12 @@ body{
     margin-right: 2vw;
     font-size: 2vw;
 }
-#CV_button{
+.CV{
     cursor: pointer;
     text-decoration: underline;
     text-align:center;
 }
-#CV_button:hover{
+.CV:hover{
     color: black;
 }
 #popup {
@@ -58,7 +58,31 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #abab16;
+    background-color: #ecc656;
+    border: 5px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ecc656;
+    border: 5px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#popup3 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ecc656;
     border: 5px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -72,4 +96,11 @@ body{
     position: absolute;
     top: 0;
     right: 0;
+}
+.stay_left{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: left;
+    font-size: 1.5vw;
+    color: black;
 }
