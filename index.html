@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Resume</title>
+</head>
+<body>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script>
+        function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+    <div class="container">
+        <img id="personal_photo" src="./image/testPhoto.png" alt="personal_photo">
+        <p id="name">張詠棋</p>
+        <p id="school">澎湖科技大學資訊工程學系</p>
+        <p><a href="https://github.com/zhang70684?tab=repositories"><img id="github_icon" src="image/githubIcon.png" alt="my_github"></a></p>
+        <p>zhang70684@gmail.com</p>
+        <p>0975812656</p>
+
+        <div class="content_block">
+            <p id="CV_button" onclick="openPopup()">自傳</p>
+
+
+            <div id="popup">
+                <span onclick="closePopup()" class="w3-button w3-display-topright">&times;</span>
+                <p>這是彈出式視窗的內容。</p>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

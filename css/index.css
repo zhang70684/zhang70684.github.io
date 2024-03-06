@@ -1,0 +1,75 @@
+body{
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #fffca1;
+    font-family: Arial, Verdana, Helvetica;
+}
+.container{
+    color: rgb(0, 0, 0);
+    background-color: 	#a5a0ec;
+    width: 60%;
+    text-align: center;
+    position:relative;
+    left: 20%;
+    padding-bottom: 1vw;
+}
+#name{
+    margin-bottom: 0vw;
+    font-size: 2.5vw;
+}
+#personal_photo{
+    margin-top: 5%;
+    width: 20%;
+    border-radius:50%;
+}
+#school{
+    margin-top: 0.3vw;
+    font-size: 2vw;
+}
+#github_icon{
+    cursor: pointer;
+    width: 5%;
+}
+.content_block{
+    color: white;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    border-radius: 1vw;
+    background-color: #6B5036;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 2vw;
+}
+#CV_button{
+    cursor: pointer;
+    text-decoration: underline;
+    text-align:center;
+}
+#CV_button:hover{
+    color: black;
+}
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #abab16;
+    border: 5px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.w3-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.w3-display-topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
